@@ -1,0 +1,15 @@
+# Cache folders and runtime files
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local database or secret environment files
+.env
+*.db
+
+# Local virtual environment folders (if created inside the project directory)
+.venv/
+env/
+
+# Ignore dynamic Codex execution tracking files
+.codex/plans/*_plan.md

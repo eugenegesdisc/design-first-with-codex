@@ -1,0 +1,9 @@
+# .codex/config.toml
+# These root keys override global settings for this specific repository layout
+
+approval_policy = "never"
+sandbox_mode = "workspace-write"
+
+[env]
+manager = "mamba"
+environment_name = "design-first-codex"
