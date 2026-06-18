@@ -12,7 +12,7 @@
 - The Codex CLI engine runs out of an isolated host toolchain environment (`env4js`).
 - All code modifications, shell commands, and test suite invocations MUST execute exclusively within the active project environment: `design-first-codex`.
 - Never bypass Mamba using standard `pip install` unless a package is completely unavailable on the `conda-forge` channel.
-- Immediately after installing or updating any package via the CLI, run: `mamba env export --no-builds > environment.yml`.
+- Immediately after installing or updating any package via the CLI, run: `mamba env export --no-builds | grep -v "^prefix:" > environment.yml`.
 
 # Process Rules (The ExecPlan Mandate)
 - Do not write feature code immediately for complex tasks.
